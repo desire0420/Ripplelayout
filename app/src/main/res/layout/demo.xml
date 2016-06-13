@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".DemoActivity">
+
+    <com.example.hzwangwentong.ripplelayout.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#ffff00"
+        app:rippleAlpha="0.2"
+        app:rippleColor="#03A9F4"
+        app:rippleDelayClick="false"
+        app:rippleHover="true"
+        app:rippleOverlay="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ripple_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/selector"
+                android:text="通过xml文件设置" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/selector"
+                android:text="通过xml文件设置" />
+
+        </LinearLayout>
+    </com.example.hzwangwentong.ripplelayout.MaterialRippleLayout>
+
+
+    <Button
+        android:id="@+id/ripple_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/selector"
+        android:text="通过代码设置" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selode"
+        android:text="5.0以上才有用" />
+
+</LinearLayout>
